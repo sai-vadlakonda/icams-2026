@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.icams2026.org/sitemap.xml

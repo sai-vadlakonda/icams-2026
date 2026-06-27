@@ -1,0 +1,15 @@
+export const SCOPE_AREAS: string[] = [
+  'Advanced Manufacturing',
+  'Renewable Energy',
+  'Thermal Engineering',
+  'Fluid Mechanics',
+  'Materials',
+  'Robotics',
+  'AI in Mechanical Engineering',
+  'Design Optimization',
+  '3D Printing',
+  'Aerospace',
+  'Tribology',
+  'Smart Materials',
+  'Green Manufacturing',
+];
