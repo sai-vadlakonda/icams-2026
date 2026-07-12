@@ -33,19 +33,6 @@ export const TRACKS: Track[] = [
   },
   {
     id: 3,
-    title: 'Renewable Energy',
-    topics: [
-      'Solar Thermal & Photovoltaic Systems',
-      'Wind Energy Systems',
-      'Bioenergy & Biofuels',
-      'Hydrogen & Fuel Cell Technologies',
-      'Energy Storage Systems',
-      'Energy Efficiency & Conservation',
-      'Hybrid Renewable Energy Systems',
-    ],
-  },
-  {
-    id: 4,
     title: 'Thermal & Fluid Engineering',
     topics: [
       'Heat Transfer & Heat Exchangers',
@@ -58,7 +45,7 @@ export const TRACKS: Track[] = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: 'Design & Computational Engineering',
     topics: [
       'Design Optimization Techniques',
@@ -68,6 +55,19 @@ export const TRACKS: Track[] = [
       'Mechanism & Machine Design',
       'Structural Health Monitoring',
       'Reliability & Fatigue Analysis',
+    ],
+  },
+  {
+    id: 5,
+    title: 'Renewable Energy',
+    topics: [
+      'Solar Thermal & Photovoltaic Systems',
+      'Wind Energy Systems',
+      'Bioenergy & Biofuels',
+      'Hydrogen & Fuel Cell Technologies',
+      'Energy Storage Systems',
+      'Energy Efficiency & Conservation',
+      'Hybrid Renewable Energy Systems',
     ],
   },
   {

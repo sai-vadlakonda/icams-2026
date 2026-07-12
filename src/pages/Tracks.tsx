@@ -15,7 +15,7 @@ export default function Tracks() {
       <PageHero
         eyebrow="Technical Tracks"
         title="7 Tracks Covering the Breadth of Mechanical Sciences"
-        description="Submit your research to the track that best matches your area of work. Each track includes dedicated technical sessions and reviewers."
+        description="Submit your research to the track that best matches your area of work, but is not limited to it."
       />
 
       <section className="section-padding">

@@ -3,7 +3,12 @@ import { UserRound } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { PageHero } from '@/components/PageHero';
 import { SectionHeading } from '@/components/SectionHeading';
-import { PATRONS, ORGANIZING_COMMITTEE, ADVISORY_COMMITTEE } from '@/data/committee';
+import {
+  PATRONS,
+  ORGANIZING_COMMITTEE,
+  NATIONAL_ADVISORY_COMMITTEE,
+  INTERNATIONAL_ADVISORY_COMMITTEE,
+} from '@/data/committee';
 import type { CommitteeMember } from '@/data/committee';
 
 function CommitteeGrid({ members }: { members: CommitteeMember[] }) {
@@ -62,13 +67,27 @@ export default function Committee() {
         </div>
 
         <div className="container-section">
-          <SectionHeading align="left" eyebrow="Advisory" title="Advisory Committee" />
+          <SectionHeading
+            align="left"
+            eyebrow="National"
+            title="National Advisory Committee"
+          />
+
           <div className="mt-8">
-            <CommitteeGrid members={ADVISORY_COMMITTEE} />
+            <CommitteeGrid members={NATIONAL_ADVISORY_COMMITTEE} />
           </div>
-          <p className="mt-6 text-xs text-ink-400">
-            Names listed are placeholders — replace with confirmed committee members in src/data/committee.ts.
-          </p>
+        </div>
+
+        <div className="container-section">
+          <SectionHeading
+            align="left"
+            eyebrow="International"
+            title="International Advisory Committee"
+          />
+
+          <div className="mt-8">
+            <CommitteeGrid members={INTERNATIONAL_ADVISORY_COMMITTEE} />
+          </div>
         </div>
       </section>
     </>

@@ -56,13 +56,14 @@ export default function AboutConference() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-primary-50 to-teal-50 dark:from-primary-500/10 dark:to-teal-500/10 p-10"
+            className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-primary-50 to-teal-50 dark:from-primary-500/10 dark:to-teal-500/10 p-12"
           >
-            <div className="text-center">
-              <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-600 to-teal-500 text-3xl font-extrabold text-white shadow-glow">
-                IC
-              </div>
-              <p className="mt-4 text-sm font-semibold text-ink-700 dark:text-ink-200">ICAMS 2026 Official Logo</p>
+            <div className="flex items-center justify-center">
+              <img
+                src="/assets/images/icams-logo.jpg"
+                alt="ICAMS 2026 Logo"
+                className="h-64 w-auto object-contain"
+              />
             </div>
           </motion.div>
         </div>

@@ -1,0 +1,17 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { lenis } from '@/hooks/useLenis';
+
+export default function RouteScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (lenis) {
+      lenis.scrollTo(0, {
+        immediate: true,
+      });
+    }
+  }, [pathname]);
+
+  return null;
+}

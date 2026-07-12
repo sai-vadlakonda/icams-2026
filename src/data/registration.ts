@@ -8,19 +8,19 @@ export interface RegistrationTier {
 export const REGISTRATION_TIERS: RegistrationTier[] = [
   {
     category: 'Students',
-    priceINR: '₹4,500',
+    priceINR: '₹6,500',
     priceUSD: '$100',
     description: 'For UG/PG/research students presenting or attending the conference.',
   },
   {
     category: 'Academicians',
-    priceINR: '₹6,500',
+    priceINR: '₹8,500',
     priceUSD: '$150',
     description: 'For faculty members and academic researchers.',
   },
   {
     category: 'Industry Professionals',
-    priceINR: '₹7,500',
+    priceINR: '₹10,000',
     priceUSD: '$200',
     description: 'For delegates from industry and R&D organizations.',
   },

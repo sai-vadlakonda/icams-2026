@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { useLenis } from '@/hooks/useLenis';
 import { MainLayout } from '@/layouts/MainLayout';
+import RouteScrollToTop from '@/components/RouteScrollToTop';
 
 import Home from '@/pages/Home';
 import AboutConference from '@/pages/AboutConference';
@@ -24,6 +25,8 @@ export default function App() {
 
   return (
     <MainLayout>
+      <RouteScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-conference" element={<AboutConference />} />

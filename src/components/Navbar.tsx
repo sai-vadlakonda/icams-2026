@@ -46,13 +46,20 @@ export function Navbar() {
           )}
         >
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-teal-500 text-sm font-extrabold text-white shadow-soft">
-              IC
-            </span>
+          <Link to="/" className="flex items-center gap-3 shrink-0">
+            <img
+              src="/assets/images/icams-logo.jpg"
+              alt="ICAMS 2026 Logo"
+              className="h-12 w-12 rounded-lg bg-white p-1 object-contain"
+            />
+
             <span className="hidden sm:flex flex-col leading-tight">
-              <span className="text-sm font-extrabold text-ink-900 dark:text-white">ICAMS 2026</span>
-              <span className="text-[10px] font-medium text-ink-500 dark:text-ink-300">VCE Hyderabad</span>
+              <span className="text-sm font-extrabold text-ink-900 dark:text-white">
+                ICAMS 2026
+              </span>
+              <span className="text-[10px] font-medium text-ink-500 dark:text-ink-300">
+                VCE Hyderabad
+              </span>
             </span>
           </Link>
 

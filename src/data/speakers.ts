@@ -2,32 +2,32 @@ export interface Speaker {
   name: string;
   title: string;
   affiliation: string;
-  topic: string;
+  image: string;
 }
 
 export const KEYNOTE_SPEAKERS: Speaker[] = [
   {
-    name: 'Prof. [Keynote Speaker 1]',
+    name: 'Virendra Pratap Singh',
     title: 'Keynote Speaker',
-    affiliation: 'Indian Institute of Science (IISc) — Placeholder',
-    topic: 'Frontiers in Advanced Manufacturing & Materials',
+    affiliation: 'Assistant Professor, Hubei University of Automotive Technology, China',
+    image: '/assets/images/speakers/virendra-pratap-singh.png',
   },
   {
-    name: 'Dr. [Keynote Speaker 2]',
+    name: 'Shengli Li',
     title: 'Keynote Speaker',
-    affiliation: 'ISRO — Placeholder',
-    topic: 'Aerospace Engineering: Challenges and Opportunities',
+    affiliation: 'Assistant Professor, Shandong University, China',
+    image: '/assets/images/speakers/shengli-li.png',
   },
   {
-    name: 'Dr. [Keynote Speaker 3]',
+    name: 'Deepak Kumar',
     title: 'Keynote Speaker',
-    affiliation: 'DRDO — Placeholder',
-    topic: 'Smart Materials for Defence Applications',
+    affiliation: 'Imperial College London, United Kingdom',
+    image: '/assets/images/speakers/deepak-kumar.png',
   },
   {
-    name: 'Prof. [Invited Speaker 4]',
-    title: 'Invited Speaker',
-    affiliation: 'International University — Placeholder',
-    topic: 'AI-Driven Design Optimization in Mechanical Systems',
+    name: 'Wang Yangyang',
+    title: 'Keynote Speaker',
+    affiliation: 'Assistant Professor, Hubei University of Automotive Technology, China',
+    image: '/assets/images/speakers/wang-yangyang.png',
   },
 ];
