@@ -93,12 +93,11 @@ export function HeroSection() {
           </Button>
 
           <Button
-            href="/brochure-icams-2026.pdf"
+            href="https://drive.google.com/file/d/13nBnPeXkO2YK88p14jWzr4t7VGT9GDLn/view"
             target="_blank"
             variant="ghost"
           >
-            <Download size={16} />
-            Download Brochure
+            <Download size={16} /> Download Brochure
           </Button>
         </motion.div>
 

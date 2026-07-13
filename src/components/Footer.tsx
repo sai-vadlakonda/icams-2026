@@ -20,9 +20,11 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-teal-500 text-sm font-extrabold text-white">
-                IC
-              </span>
+              <img
+                src="/assets/images/icams-logo.jpg"
+                alt="ICAMS 2026 Logo"
+                className="h-12 w-12 rounded-lg bg-white p-1 object-contain"
+              />
               <div>
                 <p className="text-base font-extrabold text-white">ICAMS 2026</p>
                 <p className="text-xs text-ink-400">VCE, Hyderabad</p>
