@@ -11,7 +11,7 @@ export const SITE = {
   location: 'Hyderabad, Telangana, India',
   dateRange: 'December 4 - 5, 2026',
   conferenceStartDate: '2026-12-04T09:00:00',
-  email: 'icams2026@vardhaman.org',
+  email: 'vcemech@icams2026.org',
   phone: '+91 9908181997',
   website: 'www.icams2026.org',
   address: {
@@ -29,10 +29,10 @@ export const SITE = {
 };
 
 export const PAYMENT_DETAILS = {
-  accountName: 'Vardhaman College of Engineering',
-  bank: 'ICICI Bank',
-  ifsc: 'ICIC0004266',
-  accountNumber: 'XXXXXXXXXXXX1234',
-  swift: 'ICICINBBXXX',
-  branch: 'Shamshabad Branch, Hyderabad',
+  accountName: 'ICAMS',
+  bank: 'Central Bank of India',
+  ifsc: 'CBIN0283080',
+  accountNumber: '3805415658',
+  swift: 'Not Applicable',
+  branch: 'Gudimalkapur Branch',
 };

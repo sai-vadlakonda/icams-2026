@@ -20,7 +20,7 @@ const STEPS = [
   {
     icon: FileCheck2,
     title: 'Review & Acceptance',
-    description: 'Papers undergo peer review; authors are notified of acceptance by October 10, 2026.',
+    description: 'Papers undergo peer review; authors are notified of acceptance by October 15, 2026.',
   },
   {
     icon: Mail,
@@ -46,7 +46,7 @@ export default function Submission() {
           <Button href="/templates/icams-2026-paper-template.docx" target="_blank" variant="ghost">
             <FileText size={16} /> Download Paper Template
           </Button>
-          <Button href="https://easychair.org/" target="_blank" variant="primary" className="!bg-teal-500 hover:!bg-teal-600">
+          <Button href="#" target="_blank" variant="primary" className="!bg-teal-500 hover:!bg-teal-600">
             <UploadCloud size={16} /> Go to Submission Portal
           </Button>
         </div>

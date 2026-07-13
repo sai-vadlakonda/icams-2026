@@ -99,7 +99,6 @@ export default function Registration() {
                 ['Branch', PAYMENT_DETAILS.branch],
                 ['IFSC Code', PAYMENT_DETAILS.ifsc],
                 ['Account Number', PAYMENT_DETAILS.accountNumber],
-                ['SWIFT Code', PAYMENT_DETAILS.swift],
               ].map(([label, value]) => (
                 <div key={label} className="flex justify-between gap-4 py-3">
                   <dt className="font-medium text-ink-500 dark:text-ink-400">{label}</dt>

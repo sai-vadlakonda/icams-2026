@@ -50,6 +50,18 @@ export function HeroSection() {
           </span>
         </motion.h1>
 
+        {/* Hybrid Mode Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="mt-5 flex justify-center"
+        >
+          <span className="rounded-full border border-teal-400/40 bg-teal-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-wider text-teal-300 backdrop-blur-md">
+            🌐 Hybrid Mode
+          </span>
+        </motion.div>
+
         {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 24 }}
