@@ -25,10 +25,42 @@ export default function Contact() {
   // NOTE: This demo submit handler simulates a network call. Wire this up to
   // your real backend / email service (e.g. Formspree, EmailJS, or a custom API).
   async function onSubmit(data: ContactFormValues) {
-    console.log('Contact form submitted:', data);
-    await new Promise((resolve) => setTimeout(resolve, 900));
-    setSubmitted(true);
-    reset();
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/icams2026@vardhaman.org",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            subject: data.subject,
+            message: data.message,
+
+            _subject: `New ICAMS 2026 Contact Form: ${data.subject}`,
+            _template: "table",
+            _captcha: "false",
+            _autoresponse:
+              "Thank you for contacting ICAMS 2026. We have received your message and will get back to you shortly.",
+          }),
+        }
+      );
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitted(true);
+        reset();
+      } else {
+        alert(result.message || "Failed to send message.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Network error. Please try again.");
+    }
   }
 
   return (
@@ -123,6 +155,13 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                <input
+                  type="text"
+                  name="_honey"
+                  style={{ display: "none" }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-semibold text-ink-700 dark:text-ink-200">Full Name</label>

@@ -69,6 +69,92 @@ export default function AboutConference() {
         </div>
       </section>
 
+      {/* About Department */}
+      <section className="section-padding bg-ink-50/60 dark:bg-white/[0.02]">
+        <div className="container-section">
+          <SectionHeading
+            eyebrow="About the Department"
+            title="Department of Mechanical Engineering"
+            description="Building excellence in mechanical engineering education, research, innovation, and industry collaboration."
+          />
+
+          <div className="mt-12 space-y-6 rounded-3xl border border-ink-100 dark:border-white/10 bg-white dark:bg-ink-900 p-8 shadow-soft">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="leading-relaxed text-ink-600 dark:text-ink-300"
+            >
+              The Department of Mechanical Engineering, established in 2005,
+              offers B.Tech in Mechanical Engineering and M.Tech in Engineering
+              Design. The B.Tech programme is NBA accredited under Tier-I,
+              reflecting the department's commitment to academic excellence and
+              outcome-based education.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="leading-relaxed text-ink-600 dark:text-ink-300"
+            >
+              The department provides a strong foundation in mechanical engineering
+              through a curriculum integrating theory with practical learning,
+              supported by modern laboratories, CAD/CAM, simulation, and
+              project-based education. Emerging technologies including Industry
+              4.0, Automation, Robotics, IoT, Additive Manufacturing, and Digital
+              Twin are incorporated to meet evolving industrial needs.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="leading-relaxed text-ink-600 dark:text-ink-300"
+            >
+              Faculty and students actively engage in research, consultancy, and
+              innovation in renewable energy, smart manufacturing, sustainable
+              materials, computational engineering, electric mobility, and product
+              design. The department also promotes industry collaboration through
+              internships, consultancy projects, workshops, technical clubs (SAE &
+              ISHRAE), and multidisciplinary projects.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="leading-relaxed text-ink-600 dark:text-ink-300"
+            >
+              State-of-the-art laboratories include CIM & Robotics, Numerical
+              Simulation, CAD/CAM, Thermal Engineering, Heat Transfer, Fluid
+              Mechanics & Hydraulics, Production Technology, Materials Science &
+              Metallurgy, Metrology & Machine Tools, Dynamics of Machines,
+              Mechanics of Solids, Instrumentation, Advanced Design, Finite
+              Element Analysis, and Geometric Modelling laboratories.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="leading-relaxed text-ink-600 dark:text-ink-300"
+            >
+              Committed to sustainable engineering and technological advancement,
+              the department aligns its teaching, research, and outreach with the
+              United Nations Sustainable Development Goals (SDGs 7, 9, 12, and
+              13), preparing graduates for successful careers in academia,
+              industry, and research.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
       {/* Scope */}
       <section className="section-padding bg-ink-50/60 dark:bg-white/[0.02]">
         <div className="container-section">

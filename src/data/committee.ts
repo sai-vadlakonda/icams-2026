@@ -99,11 +99,6 @@ export const ORGANIZING_COMMITTEE: CommitteeMember[] = [
     affiliation: "",
   },
   {
-    name: "Mr. Dheeraj Joshi",
-    role: "Publicity & Website Committee",
-    affiliation: "",
-  },
-  {
     name: "Mr. G. Krishna Teja",
     role: "Publicity & Website Committee",
     affiliation: "",
@@ -139,7 +134,7 @@ export const NATIONAL_ADVISORY_COMMITTEE: CommitteeMember[] = [
   {
     name: "Dr. Balaji S",
     role: "Associate Professor",
-    affiliation: "IIT Tirupati",
+    affiliation: "Department of Mechanical Engineering, IIT Tirupati",
   },
   {
     name: "Dr. Bachu Deb",
@@ -149,7 +144,7 @@ export const NATIONAL_ADVISORY_COMMITTEE: CommitteeMember[] = [
   {
     name: "Dr. Mamilla Ravi Sankar",
     role: "Professor",
-    affiliation: "IIT Tirupati",
+    affiliation: "Department of Mechanical Engineering, IIT Tirupati",
   },
   {
     name: "Dr. Sriram Venkatesh",
@@ -164,29 +159,84 @@ export const NATIONAL_ADVISORY_COMMITTEE: CommitteeMember[] = [
   {
     name: "Dr. Amit Rai Dixit",
     role: "Professor",
-    affiliation: "IIT (ISM) Dhanbad",
+    affiliation: "Department of Mechanical Engineering, IIT (ISM) Dhanbad",
+  },
+  {
+    name: "Dr. K. S. R. Krishna Murthy",
+    role: "Professor",
+    affiliation: "Department of Mechanical Engineering, IIT Guwahati",
+  },
+  {
+    name: "J Bharat Kalyan",
+    role: "Manager, Technical Support Engineering",
+    affiliation: "Ansys, part of Synopsys",
+  },
+  {
+    name: "Dr. Manish Roy",
+    role: "Scientist-E",
+    affiliation: "DRDO",
+  },
+  {
+    name: "Dr. Vijay Kumar Mahakur",
+    role: "Assistant Professor",
+    affiliation: "Department of Mechanical Engineering, Parul University, Vadodara",
+  },
+  {
+    name: "Dr. Jithendar",
+    role: "Professor",
+    affiliation: "Department of Mechanical Engineering, Chitkara University",
   },
 ];
 
 export const INTERNATIONAL_ADVISORY_COMMITTEE: CommitteeMember[] = [
   {
-    name: "Shengli Li",
+    name: "Dr. Shengli Li",
     role: "Assistant Professor",
     affiliation: "Shandong University, China",
   },
   {
-    name: "Wang Yangyang",
+    name: "Dr. Nguyen Dang Nam",
+    role: "Assistant Professor",
+    affiliation: "Duy Tan University, Vietnam",
+  },
+  {
+    name: "Dr. M. Shameer Basha",
+    role: "Professor",
+    affiliation: "College of Engineering Buraida, Qassim University, Saudi Arabia",
+  },
+  {
+    name: "Dr. Wang Yangyang",
     role: "Assistant Professor",
     affiliation: "Hubei University of Automotive Technology, China",
   },
   {
-    name: "Virendra Pratap Singh",
+    name: "Dr. Virendra Pratap Singh",
     role: "Assistant Professor",
     affiliation: "Hubei University of Automotive Technology, China",
   },
   {
-    name: "Deepak Kumar",
+    name: "Dr. Deepak Kumar",
     role: "Faculty",
     affiliation: "Imperial College London, United Kingdom",
+  },
+  {
+    name: "Mr. Ramakrishna Dodda",
+    role: "Senior Piping Engineer",
+    affiliation: "Sinopec International Petroleum Service Corporation, Dubai, UAE",
+  },
+  {
+    name: "Dr. Chaitanya Gullipalli",
+    role: "JSPS Post-Doctoral Fellow",
+    affiliation: "Tohoku University, Sendai, Japan",
+  },
+  {
+    name: "Dr. Srinath Ramagiri",
+    role: "Research Fellow II",
+    affiliation: "Brunel University of London",
+  },
+  {
+    name: "S. V. Prabhakar Vattikuti",
+    role: "International Research Professor",
+    affiliation: "Yeungnam University, South Korea",
   },
 ];
