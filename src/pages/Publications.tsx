@@ -33,14 +33,11 @@ export default function Publications() {
             transition={{ duration: 0.5 }}
             className="mx-auto mt-12 max-w-4xl rounded-3xl border border-ink-100 dark:border-white/10 bg-white dark:bg-ink-900 p-8 shadow-card"
           >
+            {/* Icon Only */}
             <div className="flex items-center gap-4">
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-teal-500 text-white">
                 <BookOpen size={26} />
               </div>
-
-              <h3 className="text-2xl font-bold text-ink-900 dark:text-white">
-                Publication Opportunity
-              </h3>
             </div>
 
             <p className="mt-6 text-base leading-8 text-ink-600 dark:text-ink-300">
@@ -48,13 +45,27 @@ export default function Publications() {
               <strong> Scopus-indexed conference proceedings.</strong>
             </p>
 
+            {/* Conference Proceedings */}
             <div className="mt-8 rounded-2xl bg-ink-50 dark:bg-white/5 p-6">
               <h4 className="text-lg font-semibold text-ink-900 dark:text-white">
-                List of Conference Proceedings / Journals
+                List of Conference Proceedings
               </h4>
 
               <p className="mt-3 text-base text-ink-600 dark:text-ink-300">
                 Will be updated soon.
+              </p>
+            </div>
+
+            {/* Journals */}
+            <div className="mt-6 rounded-2xl bg-ink-50 dark:bg-white/5 p-6">
+              <h4 className="text-lg font-semibold text-ink-900 dark:text-white">
+                List of Journals
+              </h4>
+
+              <p className="mt-3 text-base leading-7 text-ink-600 dark:text-ink-300">
+                • Selected presented papers, upon extension, will be published
+                in the{" "}
+                <strong>China Welding Journal (Scopus Q3)</strong>.
               </p>
             </div>
           </motion.div>

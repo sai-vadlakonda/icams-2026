@@ -22,8 +22,6 @@ export default function Contact() {
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>();
 
-  // NOTE: This demo submit handler simulates a network call. Wire this up to
-  // your real backend / email service (e.g. Formspree, EmailJS, or a custom API).
   async function onSubmit(data: ContactFormValues) {
     try {
       const response = await fetch(

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FileText, UploadCloud, Mail, FileCheck2 } from 'lucide-react';
+import { UploadCloud, Mail, FileCheck2 } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { PageHero } from '@/components/PageHero';
 import { Button } from '@/components/Button';
@@ -8,24 +8,22 @@ import { SITE } from '@/constants/site';
 
 const STEPS = [
   {
-    icon: FileText,
-    title: 'Download the Paper Template',
-    description: 'Prepare your manuscript using the official ICAMS 2026 formatting template.',
-  },
-  {
     icon: UploadCloud,
     title: 'Submit via the Online Portal',
-    description: 'Upload your full paper through the conference submission portal before the deadline.',
+    description:
+      'Upload your full paper through the ICAMS 2026 EasyChair submission portal before the submission deadline.',
   },
   {
     icon: FileCheck2,
     title: 'Review & Acceptance',
-    description: 'Papers undergo peer review; authors are notified of acceptance by October 15, 2026.',
+    description:
+      'All submissions undergo peer review. Authors will be notified of acceptance by October 15, 2026.',
   },
   {
     icon: Mail,
     title: 'Camera-Ready Submission',
-    description: 'Accepted authors submit the final camera-ready version by October 20, 2026.',
+    description:
+      'Accepted authors must submit the final camera-ready paper by October 20, 2026.',
   },
 ];
 
@@ -34,28 +32,36 @@ export default function Submission() {
     <>
       <SEO
         title="Paper Submission"
-        description="Submit your full paper for ICAMS 2026. Download the paper template, use the online submission portal, and follow the peer review timeline."
+        description="Submit your research paper to ICAMS 2026 through the EasyChair submission portal."
         path="/submission"
       />
+
       <PageHero
         eyebrow="Call for Papers"
         title="Paper Submission Guidelines"
-        description="Follow the steps below to submit your research for ICAMS 2026. Submission opens June 10, 2026."
+        description="Follow the submission process below to submit your research paper for ICAMS 2026. Paper submission opens on July 25, 2026."
       >
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button href="/templates/icams-2026-paper-template.docx" target="_blank" variant="ghost">
-            <FileText size={16} /> Download Paper Template
-          </Button>
-          <Button href="#" target="_blank" variant="primary" className="!bg-teal-500 hover:!bg-teal-600">
-            <UploadCloud size={16} /> Go to Submission Portal
+        <div className="mt-8 flex justify-center">
+          <Button
+            href="https://easychair.org/conferences/?conf=icams2026"
+            target="_blank"
+            variant="primary"
+            className="!bg-teal-500 hover:!bg-teal-600"
+          >
+            <UploadCloud size={16} />
+            Go to Submission Portal
           </Button>
         </div>
       </PageHero>
 
       <section className="section-padding">
         <div className="container-section">
-          <SectionHeading eyebrow="Process" title="Submission Workflow" />
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <SectionHeading
+            eyebrow="Process"
+            title="Submission Workflow"
+          />
+
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {STEPS.map((step, index) => (
               <motion.div
                 key={step.title}
@@ -68,9 +74,19 @@ export default function Submission() {
                 <span className="absolute -top-4 -left-1 text-5xl font-extrabold text-primary-100 dark:text-white/5">
                   {index + 1}
                 </span>
-                <step.icon size={26} className="relative z-10 text-primary-600 dark:text-primary-300" />
-                <h3 className="relative z-10 mt-4 text-base font-bold text-ink-900 dark:text-white">{step.title}</h3>
-                <p className="relative z-10 mt-2 text-sm text-ink-500 dark:text-ink-300">{step.description}</p>
+
+                <step.icon
+                  size={26}
+                  className="relative z-10 text-primary-600 dark:text-primary-300"
+                />
+
+                <h3 className="relative z-10 mt-4 text-base font-bold text-ink-900 dark:text-white">
+                  {step.title}
+                </h3>
+
+                <p className="relative z-10 mt-2 text-sm text-ink-500 dark:text-ink-300">
+                  {step.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -84,7 +100,10 @@ export default function Submission() {
           >
             <p className="text-sm text-ink-600 dark:text-ink-300">
               For submission-related queries, please write to us at{' '}
-              <a href={`mailto:${SITE.email}`} className="font-semibold text-primary-600 dark:text-primary-300">
+              <a
+                href={`mailto:${SITE.email}`}
+                className="font-semibold text-primary-600 dark:text-primary-300"
+              >
                 {SITE.email}
               </a>
             </p>
